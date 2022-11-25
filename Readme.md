@@ -8,7 +8,6 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL License][license-shield]][license-url]
 
@@ -180,8 +179,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [contributors-url]: https://github.com/kaystrobach/typo3-polyfill-paginateviewhelper/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/kaystrobach/typo3-polyfill-paginateviewhelper.svg?style=for-the-badge
 [forks-url]: https://github.com/kaystrobach/typo3-polyfill-paginateviewhelper/network/members
-[stars-shield]: https://img.shields.io/github/kaystrobach/typo3-polyfill-paginateviewhelper.svg?style=for-the-badge
-[stars-url]: https://github.com/kaystrobach/typo3-polyfill-paginateviewhelper/stargazers
 [issues-shield]: https://img.shields.io/github/issues/kaystrobach/typo3-polyfill-paginateviewhelper.svg?style=for-the-badge
 [issues-url]: https://github.com/kaystrobach/typo3-polyfill-paginateviewhelper/issues
 [license-shield]: https://img.shields.io/github/license/kaystrobach/typo3-polyfill-paginateviewhelper.svg?style=for-the-badge
