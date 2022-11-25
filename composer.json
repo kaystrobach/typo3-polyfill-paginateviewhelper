@@ -1,0 +1,21 @@
+{
+    "name": "kaystrobach/typo3-polyfill-paginateviewhelper",
+    "description": "Polyfill for the removed paginate ViewHelper",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Kay Strobach",
+            "email": "info@kay-strobach.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "typo3/cms": "^11"
+    },
+    "autoload": {
+        "files": [
+            "Classes/*"
+        ]
+    }
+}
