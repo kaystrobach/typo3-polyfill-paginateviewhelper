@@ -189,7 +189,7 @@ class Response implements ResponseInterface
      */
     public function __toString()
     {
-        return $this->getContent();
+        return $this->getContent() ?? '';
     }
 
     /**
