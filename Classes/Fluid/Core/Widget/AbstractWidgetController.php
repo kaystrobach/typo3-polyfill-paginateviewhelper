@@ -71,11 +71,25 @@ abstract class AbstractWidgetController extends ActionController implements Sing
         if (isset($pluginConfiguration['templateRootPath']) && !isset($pluginConfiguration['templateRootPaths'])) {
             $pluginConfiguration['templateRootPaths'][10] = $pluginConfiguration['templateRootPath'];
         }
+
         $widgetViewConfiguration = array_merge_recursive(
             (array)$rootConfiguration,
             (array)$parentConfiguration,
             (array)$pluginConfiguration
         );
+
+        foreach ($widgetViewConfiguration as $templateType => $folders) {
+            if (is_array($folders)) {
+                foreach ($folders as $folderKey => $folder) {
+                    $widgetViewConfiguration[$templateType][$folderKey] = $folder . 'ViewHelpers/Widget/';
+                }
+                continue;
+            }
+            if (is_string($folders)) {
+                $widgetViewConfiguration[$templateType] = $folders . 'ViewHelpers/Widget/';
+            }
+        }
+
         $view->getTemplatePaths()->fillFromConfigurationArray($widgetViewConfiguration);
     }
 }
